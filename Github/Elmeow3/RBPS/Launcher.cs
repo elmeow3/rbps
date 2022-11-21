@@ -14,7 +14,7 @@ namespace Github.Elmeow3.RBPS
 
     public Launcher(Options options)
     {
-      
+
     }
 
     private class Options
@@ -35,7 +35,7 @@ namespace Github.Elmeow3.RBPS
       [Option(ShortName = 'v', LongName = "verbose", Required = false, HelpText = "Verbose output")]
       public bool Verbose {get {return _verbose;}}
 
-      [Option(ShortName = 'm', LongName = "merge", HelpText = "Merge patch files into one")]
+      [Option(ShortName = 'm', LongName = "merge", Required = false, HelpText = "Merge patch files into one")]
       public bool Merge {get {return _merge;}}
 
       [Value(1, Required = true, Min = 1, HelpText = "Patch files")]
